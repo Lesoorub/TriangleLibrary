@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TriangleGeometry\TriangleGeometry.csproj" />
+    <ProjectReference Include="..\Triangle\Triangle.csproj" />
   </ItemGroup>
 
 </Project>

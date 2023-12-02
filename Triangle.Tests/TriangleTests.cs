@@ -1,16 +1,16 @@
-namespace TriangleGeometry.Tests
+namespace Triangle.Tests
 {
     /// <summary>
     /// Ремлизует набор тестов подтверждающих правильность работы функии 
     /// <see cref="Triangle.GetTypeBySides(float, float, float)"/> исходя 
-    /// только из длин сторон возможных триугольников.
+    /// только из длин сторон возможных треугольников.
     /// </summary>
     [TestClass]
     public class TriangleGetTypeBySidesTests
     {
         /// <summary>
         /// Проверка функции <see cref="Triangle.GetTypeBySides(float, float, float)"/> 
-        /// с входными параметрами соответствующие типу триугольника <see cref="TiangleType.Obtuse"/>.
+        /// с входными параметрами соответствующие типу треугольника <see cref="TiangleType.Obtuse"/>.
         /// </summary>
         [TestMethod]
         public void TryGetTypeBySidesReturnsAcuteIfSidesEqual_1_1_1()
@@ -20,7 +20,7 @@ namespace TriangleGeometry.Tests
 
         /// <summary>
         /// Проверка функции <see cref="Triangle.GetTypeBySides(float, float, float)"/> 
-        /// с входными параметрами соответствующие типу триугольника <see cref="TiangleType.Right"/>.
+        /// с входными параметрами соответствующие типу треугольника <see cref="TiangleType.Right"/>.
         /// </summary>
         [TestMethod]
         public void TryGetTypeBySidesReturnsRightIfSidesEqual_3_4_5()
@@ -30,7 +30,7 @@ namespace TriangleGeometry.Tests
 
         /// <summary>
         /// Проверка функции <see cref="Triangle.GetTypeBySides(float, float, float)"/> 
-        /// с входными параметрами соответствующие типу триугольника <see cref="TiangleType.Obtuse"/>.
+        /// с входными параметрами соответствующие типу треугольника <see cref="TiangleType.Obtuse"/>.
         /// </summary>
         [TestMethod]
         public void TryGetTypeBySidesReturnsObtuseIfSidesEqual_3_4_6()

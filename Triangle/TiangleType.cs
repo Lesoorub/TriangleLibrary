@@ -1,4 +1,4 @@
-﻿namespace TriangleGeometry
+﻿namespace Triangle
 {
 
     /// <summary>

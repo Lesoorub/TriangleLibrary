@@ -2,10 +2,10 @@
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 
-namespace TriangleGeometry.Tests
+namespace Triangle.Tests
 {
     /// <summary>
-    /// Описывает бенчмарк функций определения типа триугольника.
+    /// Описывает бенчмарк функций определения типа треугольника.
     /// </summary>
     [SimpleJob(RuntimeMoniker.Net60)]
     [RPlotExporter]
@@ -23,7 +23,7 @@ namespace TriangleGeometry.Tests
 
         /// <summary>
         /// Бенчмарк функции <see cref="Triangle.GetTypeBySides(float, float, float)"/> 
-        /// с входными параметрами соответствующие типу триугольника <see cref="TiangleType.Obtuse"/>.
+        /// с входными параметрами соответствующие типу треугольника <see cref="TiangleType.Obtuse"/>.
         /// </summary>
         [Benchmark]
         public void GetTypeBySidesFromFloatsReturnsObtuse() =>
@@ -31,7 +31,7 @@ namespace TriangleGeometry.Tests
 
         /// <summary>
         /// Бенчмарк функции <see cref="Triangle.GetTypeBySides(float, float, float)"/> 
-        /// с входными параметрами соответствующие типу триугольника <see cref="TiangleType.Right"/>.
+        /// с входными параметрами соответствующие типу треугольника <see cref="TiangleType.Right"/>.
         /// </summary>
         [Benchmark]
         public void GetTypeBySidesFromFloatsReturnsRight() =>
@@ -39,7 +39,7 @@ namespace TriangleGeometry.Tests
 
         /// <summary>
         /// Бенчмарк функции <see cref="Triangle.GetTypeBySides(float, float, float)"/> 
-        /// с входными параметрами соответствующие типу триугольника <see cref="TiangleType.Acute"/>.
+        /// с входными параметрами соответствующие типу треугольника <see cref="TiangleType.Acute"/>.
         /// </summary>
         [Benchmark]
         public void GetTypeBySidesFromFloatsReturnsAcute() =>
